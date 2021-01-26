@@ -1,0 +1,41 @@
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  background-color: grey;
+  color: white;
+}
+
+body a:visited {
+  color: white;
+}
+
+body button {
+  cursor: pointer;
+}
+
+body button:disabled {
+  cursor: default;
+}
+
+.app.container {
+  display: flex;
+  place-items: center;
+  justify-content: space-around;
+}
+
+.is-active {
+  font-weight: bold;
+}
+/*# sourceMappingURL=main.css.map */

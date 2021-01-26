@@ -1,0 +1,57 @@
+//colors
+
+//font-size
+
+$fnt-xlarge: 6rem;
+$fnt-large: 3rem;
+$fnt-largish: 2.5rem;
+$fnt-medium: 1.8rem;
+$fnt-small: 1rem;
+
+//spacing
+$xs-space: 0.5rem;
+$s-space: 1rem;
+$m-space: 1.6rem;
+$l-space: 3.3rem;
+$xl-space: 4.8rem;
+
+//radii
+$rad-small: 0.5rem;
+
+//animation
+
+$animation-speed: 250ms ease-in-out;
+
+//media queries
+
+$desktop-breakpoint: 45rem;
+
+//mixins
+
+@mixin bigButton {
+  width: 100%;
+  padding: $s-space;
+
+  font-size: $fnt-large;
+  font-weight: bold;
+  border: none;
+  border-bottom: 1rem solid darken($clr-main, 10%);
+
+  // &::after {
+  //   content: "";
+  //   position: relative;
+  //   top: 0;
+  //   left: 50px;
+  //   display: block;
+  //   height: 10px;
+  //   width: 20px;
+  //   background: $clr-black;
+  // }
+
+  &:hover {
+    @include shadowStyle;
+    // background: $clr-mainlight;
+    // width: 101%;
+    transition: $animation-speed;
+  }
+}
