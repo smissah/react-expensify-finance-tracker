@@ -1,14 +1,9 @@
-//entry --> output
-//!you need to restart evertime you change the config
-
 const path = require("path");
 
 module.exports = {
-  // entry: "./src/sandbox/higher-order-components.js",
   entry: "./src/app.js",
   output: {
     path: path.join(__dirname, "public"),
-
     filename: "bundle.js",
   },
   module: {
@@ -25,8 +20,6 @@ module.exports = {
     ],
   },
   devtool: "cheap-module-eval-source-map",
-  //check wepback documentation for other types of #SOURCE MAPS
-
   devServer: {
     contentBase: path.join(__dirname, "public"),
     historyApiFallback: true,
